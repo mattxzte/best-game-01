@@ -8,11 +8,11 @@
 import { makeRng } from './rng.js';
 
 const PLAY_SETUP = [
-  // True Colors, blue detour only: the blue prism wakes, the green one
-  // waits. Two moves left, one prism lit — a game in progress.
-  [3, 6, '/'],
-  [3, 5, '/'],
-  [9, 5, '\\'],
+  // Crossroads, two of three mirrors placed: the splitter's down branch
+  // already wakes the lower prism, the upper one still waits. Three moves
+  // left, one prism lit — a game in progress.
+  [6, 4, '/'],
+  [6, 1, '/'],
 ];
 
 const END_SETUP = [
@@ -41,7 +41,7 @@ export function applyShot(game, params) {
   }));
 
   if (shot === 'play') {
-    game.startLevel(3);
+    game.startLevel(2);
     for (const [x, y] of PLAY_SETUP) {
       game.levelState.act(x, y, 0);
     }

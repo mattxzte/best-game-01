@@ -37,7 +37,7 @@ export const LEVELS = [
   {
     name: 'First Light',
     hint: 'Bend the beam around the wall. Click an empty cell to place a mirror; click a mirror to turn it.',
-    par: 4,
+    par: 5,
     walls: [[4, 3]],
     emitters: [{ x: 0, y: 3, dir: 'right', color: 'red' }],
     prisms: [{ x: 8, y: 3, color: 'red' }],
@@ -89,7 +89,7 @@ export const LEVELS = [
   {
     name: 'Around the Wall',
     hint: 'The wall runs the whole height. One beam goes over the top, the other under the floor.',
-    par: 8,
+    par: 10,
     walls: [
       [6, 1], [6, 2], [6, 3], [6, 4], [6, 5], [6, 6],
     ],
@@ -120,7 +120,7 @@ export const LEVELS = [
   {
     name: 'The Gauntlet',
     hint: 'Two beams, three prisms, one shared grid. One beam can wake two prisms in a line.',
-    par: 8,
+    par: 10,
     walls: [[5, 2], [5, 5]],
     emitters: [
       { x: 0, y: 2, dir: 'right', color: 'red' },
@@ -137,7 +137,7 @@ export const LEVELS = [
   {
     name: 'Grand Prism',
     hint: 'Everything at once: a split, a repaint, and two long detours. Spend every move like it matters.',
-    par: 9,
+    par: 10,
     walls: [[8, 1], [5, 6]],
     emitters: [
       { x: 0, y: 1, dir: 'right', color: 'red' },

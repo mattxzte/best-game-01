@@ -15,6 +15,7 @@ canvas.height = VIEW_HEIGHT;
 const ctx = canvas.getContext('2d');
 
 const game = new Game();
+window.__prismweave = game;
 const renderer = new Renderer();
 const params = new URLSearchParams(window.location.search);
 
