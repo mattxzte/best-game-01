@@ -1,0 +1,28 @@
+/* Prismweave — page chrome. The game itself is drawn on the canvas; this
+   only centers it on a dark page and keeps it fitted to the window. */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #05070f;
+  height: 100%;
+  overflow: hidden;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#game {
+  display: block;
+  background: #0a0e1a;
+  border-radius: 4px;
+  cursor: pointer;
+}
